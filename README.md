@@ -60,27 +60,6 @@ OSRM is an open-source routing machine, and you have several options for accessi
 
 **Important:** When using the public demo server, be mindful of its limitations and avoid excessive requests. For production applications, self-hosting or using a third-party provider is strongly recommended.
 
-## Clone and Run
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone [your-repository-url]
-    cd [your-project-directory]
-    ```
-2.  **Install Dependencies:**
-    ```bash
-    flutter pub get
-    ```
-3.  **Run the Application:**
-    * For Android:
-        ```bash
-        flutter run -d [device-id or emulator-id]
-        ```
-    * For iOS:
-        ```bash
-        flutter run -d [device-id or simulator-id]
-        ```
-
 ## OSRM API Integration
 
 This application relies on the OSRM API to fetch routing data. It sends HTTP requests to the OSRM server and parses the response to extract route information. The `flutter_polyline_points` package is then used to decode the polyline data and render it on the `flutter_map` widget.
